@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+:root {
+  --color-cream: #fffaf3;
+  --color-bun: #f4e3c1;
+  --color-char: #2a1e17;
+  --color-flame-50: #fff1ec;
+  --color-flame-100: #ffe0d3;
+  --color-flame-500: #e8542a;
+  --color-flame-600: #d1421c;
+  --color-flame-700: #ab3417;
+  --color-mustard-400: #f2b705;
+  --color-mustard-500: #dba300;
+  --color-lettuce-500: #4c8c4a;
+  --color-lettuce-600: #3c7239;
+}
+
+@theme inline {
+  --color-cream: var(--color-cream);
+  --color-bun: var(--color-bun);
+  --color-char: var(--color-char);
+  --color-flame-50: var(--color-flame-50);
+  --color-flame-100: var(--color-flame-100);
+  --color-flame-500: var(--color-flame-500);
+  --color-flame-600: var(--color-flame-600);
+  --color-flame-700: var(--color-flame-700);
+  --color-mustard-400: var(--color-mustard-400);
+  --color-mustard-500: var(--color-mustard-500);
+  --color-lettuce-500: var(--color-lettuce-500);
+  --color-lettuce-600: var(--color-lettuce-600);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --font-display: var(--font-fraunces);
+}
+
+html {
+  background: var(--color-cream);
+}
+
+body {
+  background: var(--color-cream);
+  color: var(--color-char);
+  font-family: var(--font-sans), system-ui, sans-serif;
+}
+
+.font-display {
+  font-family: var(--font-display), Georgia, serif;
+}
+
+::selection {
+  background: var(--color-flame-100);
+  color: var(--color-flame-700);
+}
